@@ -4,10 +4,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Newt Games is an indie video game studio, creating apps and games for consoles, phones, and computers.">
+		<meta property="og:title" content="Newt Games" />
+		<meta property="og:image" content="https://newt.games/images/site_preview.png" />
+		<meta name="theme-color" content="#ffa500">
 		<link rel="icon" type="image/png" href="newt_logo.png" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				// on load, start the godot preview if we're not on a phone
+				if (!(/Mobi|Android/i.test(navigator.userAgent))) {
+					$(".gamecontainer")[0].innerHTML = '<iframe src="https://newt.games/papercut/" frameborder="0"><img src="images/papercut-teaser.png"></iframe>';
+				}
+			});
+		</script>
+		
 	</head>
 	<body>
 		<div class="header">
@@ -32,10 +45,9 @@
 				</div>
 				<a class="prev" href="#prev-1">&lt;</a>
 				<a class="next" href="#next-1">&gt;</a>
-				<iframe src="https://newt.games/papercut/" frameborder="0">
+				<div class="gamecontainer">
 					<img src="images/papercut-teaser.png">
-				</iframe>
-				
+				</div>
 			</div>
 			<div class="clearfix"></div>
 			<div class="container">
@@ -51,8 +63,12 @@
 					Newt Games is a small video game studio, creating apps and games for consoles, phones, and computers. For more information, visit our <a href="/support">support page</a>.
 				</p>
 				<p>
-					Our games try to strike a balance between being fun and being a serious game. We're not trying to make games that are too serious, but rather to make games that are fun.
+					Our games try to strike a balance between being simple enough to provide a good user experience, but complicated enough to be fun and interesting.
 				</p>
+				<p>
+					&nbsp;
+				</p>
+				
 			</div>
 		</div>
 	</body>

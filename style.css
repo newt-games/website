@@ -5,7 +5,7 @@
 
 body
 {
-	background-color: #373737;
+	/* background-color: #373737; */
 	color: #ccc;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 46px;
@@ -56,7 +56,7 @@ body
 	font-size: 20px;
 	left: 0;
 	right: 0;
-	position: absolute;
+	/* position: absolute; */
 	text-align: right;
 	padding: 5px;
     padding-right: 15px;
@@ -92,7 +92,7 @@ a
     animation: fadein 1s;
 }
 
-.slider img, .slider iframe {
+.slider img, .slider iframe, .slider .gamecontainer {
     width: 100%;
     max-width: 1474px;
     text-align: center;
@@ -182,4 +182,17 @@ a.prev, a.next {
     float: left;
     left: 0;
     right: unset;
+}
+
+@media screen and (max-width: 600px) {
+    .tagline2 {
+        display: none;
+    }
+
+    .slider .tagline {
+        font-size: 14px;
+        left: 0;
+        right: unset;
+        margin-top: 20px;    
+    }
 }
