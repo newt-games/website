@@ -1,78 +1,94 @@
 <html>
-	<head>
-		<title>Newt Games</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Newt Games is an indie game development studio, creating apps and games for consoles, phones, and computers.">
-		<meta property="og:title" content="Newt Games" />
-		<!-- <meta property="og:image" content="https://newt.games/images/site_preview.png" /> -->
-		<meta name="theme-color" content="#ffa500">
-		<link rel="icon" type="image/png" href="newt_logo.png" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-		<script>
-			$(document).ready(function() {
-				// on load, start the godot preview if we're not on a phone
-				if (!(/Mobi|Android/i.test(navigator.userAgent))) {
-					$(".gamecontainer")[0].innerHTML = '<iframe src="https://newt.games/papercut/" frameborder="0"><img src="images/papercut-teaser.png"></iframe>';
-				}
-			});
-		</script>
-		
-	</head>
-	<body>
-		<div class="header">
-			<img src="newt_logo.png" alt="newt games logo" />
-			<span>newt games</span>
-			<!-- <div class="nav">
+<head>
+	<title>Newt Games</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Newt Games is an indie game development studio, creating apps and games for consoles, phones, and computers.">
+	<meta property="og:title" content="Newt Games" />
+	<!-- <meta property="og:image" content="https://newt.games/images/site_preview.png" /> -->
+	<meta name="theme-color" content="#ffa500">
+	<link rel="icon" type="image/png" href="newt_logo.png" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// on load, start the godot preview if we're not on a phone
+			if (!(/Mobi|Android/i.test(navigator.userAgent))) {
+				$(".gamecontainer")[0].innerHTML = '<iframe src="https://newt.games/papercut/" frameborder="0"><img src="images/papercut-teaser.png"></iframe>';
+			}
+		});
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YXXED4934"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-1YXXED4934');
+	</script>
+
+</head>
+
+<body>
+	<div class="header">
+		<img src="newt_logo.png" alt="newt games logo" />
+		<span>newt games</span>
+		<!-- <div class="nav">
 				<a href="/games">games</a>
 				<a href="/support">support</a>
 				<a href="/about">about</a>
 				<a href="/contact">contact</a>
 			</div> -->
-		</div>
-		<div class="main">
-			<div class="slider">
-				<div class="tagline">
-					Explore eerie dungeons in Papercut
-					<br />
-					A new 2.5D platforming RPG
-				</div>
-				<div class="tagline2">
-					Click and drag to walk around!
-				</div>
-				<a class="prev" href="#prev-1">&lt;</a>
-				<a class="next" href="#next-1">&gt;</a>
-				<div class="gamecontainer">
-					<img src="images/papercut-teaser.png">
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="container">
-				<h2>Games</h2>
-				<ul>
-					TODO: add Icons, pages, and such
-					<li>Papercut (Demo above)</li>
-					<li>Star Ride (More details to come)</li>
-					<li>Another Space Game (TBD)</li>
-				</ul>
-				<h2>About</h2>
-				<p>
-					Newt Games is a small game studio, creating apps and games for consoles, phones, and computers. For more information, visit our <a href="/support">support page</a>.
-				</p>
-				<p>
-					Our games strike a balance between a simple user interface and experience, but complex enough to be fun and interesting.
-				</p>
-				<p>
-					&nbsp;
-				</p>
-				
-			</div>
-		</div>
-	</body>
-	<div class="footer">
-		Copyright 2021 <a href="https://newt.llc">Newt Group LLC</a>
 	</div>
+	<div class="main">
+		<div class="slider">
+			<div class="tagline">
+				Explore eerie dungeons in Papercut
+				<br />
+				A new 2.5D platforming RPG
+			</div>
+			<div class="tagline2">
+				Click and drag to walk around!
+			</div>
+			<a class="prev" href="#prev-1">&lt;</a>
+			<a class="next" href="#next-1">&gt;</a>
+			<div class="gamecontainer">
+				<img src="images/papercut-teaser.png">
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="container">
+			<h2>Games</h2>
+			<ul>
+				TODO: add Icons, pages, and such
+				<li>Papercut (Demo above)</li>
+				<li>Star Ride (More details to come)</li>
+				<li>Another Space Game (TBD)</li>
+			</ul>
+			<h2>About</h2>
+			<p>
+				Newt Games is a small game studio, creating apps and games for consoles, phones, and computers. For more
+				information, visit our &lt;other page&gt;.
+			</p>
+			<p>
+				Our games strike a balance between a simple user interface and experience, but complex enough to be fun
+				and interesting.
+			</p>
+			<p>
+				&nbsp;
+			</p>
+
+		</div>
+	</div>
+</body>
+<div class="footer">
+	Copyright 2021-2023 <a href="https://newt.llc">Newt Group LLC</a>
+</div>
+
 </html>
