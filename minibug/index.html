@@ -153,7 +153,7 @@ const engine = new Engine(GODOT_CONFIG);
 		threads: GODOT_THREADS_ENABLED,
 	});
 
-	if (missing.length !== 0) {
+	if (false) {
 		if (GODOT_CONFIG['serviceWorker'] && GODOT_CONFIG['ensureCrossOriginIsolationHeaders'] && 'serviceWorker' in navigator) {
 			// There's a chance that installing the service worker would fix the issue
 			Promise.race([
